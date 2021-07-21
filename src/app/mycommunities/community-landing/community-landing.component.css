@@ -1,0 +1,258 @@
+.community-landing{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+.landing-wish{
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.landing-wish-quotes{
+    max-width: 500px;
+    margin-left: 50px;
+}
+.quote-001{
+    font-size: 1.9em;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.2mm;
+}
+.quote-002{
+    font-size: 3em;
+    color: #b4cc76;
+    font-weight: 900;
+    letter-spacing: 0.4mm;
+    line-height: 2rem;
+}
+.quote-003{
+    font-size: 0.8em;
+    color: white;
+}
+.gaping{
+    margin-top: 10px;
+}
+.community-controls{
+    align-items: center;
+}
+.community-options{
+    width: 90vw;
+    margin-right: auto;
+    padding-top: 15px;
+    margin-left: auto;
+}
+.button-highlight{
+    color: rgb(50, 128, 50);
+    outline: none;
+    border: none;
+    background: inherit;
+    font-size: 1em;
+    display: inline-block;
+    margin-right: 10px;
+}
+.button-highlight:focus{
+    text-decoration: underline;
+}
+.button-minimal{
+    color: rgb(56, 56, 56);
+    outline: none;
+    border: none;
+    background: inherit;
+    font-size: 1em;
+    display: inline-block;
+    margin-right: 10px;
+}
+.right-division{
+    display: flex;
+    justify-content: flex-end;
+}
+.button-invite{
+    color: white;
+    background-color: #2d587c;
+    padding: 7px 17px;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 17px;
+}
+
+.cards-presentation{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* card css */
+.cardbackground
+{
+    height: 190px;
+    border-radius: 20px;
+    width: 21vw;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    padding: 8px;
+}
+.card-top{
+    position:relative;
+    width:100%;
+    display: flex;
+    min-height: 60px;
+}
+.card-bottom
+{
+    position:absolute;
+    bottom:8px;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerfontcolor
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    color:white;
+    display: block;
+    text-align: start;
+}
+.time-stamp{
+    color: white;
+    font-size: 0.7em !important;
+    text-align: start;
+}
+.ml-left-small{
+    padding-left: 2px;
+}
+.img-fluid{
+    height:35px; 
+    width:35px; 
+    border-radius: 27px;
+}
+.card-name{
+    display: inline-block;
+    text-align: start;
+}
+.card-name-over{
+    width: 100%;
+    max-height: 35px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.metrics{
+    color: white;
+}
+.maximum-width{
+    width: 100%;
+}
+.recommend-bottom{
+    width: 100%;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.recommend-bottom-fle{
+    width: 100%;
+    display: flex;
+    padding-top: 15px;
+}
+.service-type{
+    display: block;
+    margin-top: 7px;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+}
+.member-count{
+    display: block;
+    color: white;
+    font-size: 0.8em;
+}
+.center-align{
+    justify-content: center;
+    display: flex;
+}
+.join-button{
+    display: block;
+    padding: 7px 24px;
+    border-radius: 20px;
+    background-color: #869658;
+    color: white;
+    font-size: 1em;
+    margin-top: 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+/* card css */
+
+
+.venv{
+    align-items: middle;
+    background-color: white;
+    height: 100px;
+}
+
+@media (min-width:551px) and (max-width:768px){
+    .community-landing{
+        font-size: 14px;
+    }
+    .cardbackground{
+        height: 160px;
+        }
+}
+
+@media(max-width:550px){
+    .landing-wish-quotes{
+        max-width: 500px;
+        margin-left: 0px;
+    }
+    .cards-presentation{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .right-division{
+        justify-content: center;
+        display: flex;
+    }
+    .left-division{
+        justify-content: center;
+        display: flex;
+        padding-bottom: 15px
+    }
+    .quote-002{
+        font-size: 3rem;
+        color: #b4cc76;
+        font-weight: 900;
+        letter-spacing: 0.4mm;
+        line-height: 40px;
+    }
+    .gaping{
+        text-align: center;
+    }
+    .community-landing{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+    }
+    .cardbackground{
+    height: 190px;
+    border-radius: 20px;
+    width: 80vw;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    padding: 8px;
+    margin-left: 0px !important;
+    }
+    
+    
+}
+
+

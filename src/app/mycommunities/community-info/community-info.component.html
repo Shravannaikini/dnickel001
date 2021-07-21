@@ -1,0 +1,126 @@
+<div class="container-div">
+    <div class="maximum-width community-data-div">
+        <div class="community-data">
+            <div class="community-data-row">
+                <span class="quote-001">{{communityData.search_groups[0].about}}</span>
+            </div>
+            <div class="community-data-row">
+                <span class="quote-002">{{communityData.search_groups[0].group_name}}</span>
+            </div>
+            <div class="community-data-row row">
+                    
+                        <span class="small-quotes">
+                            <i class="far fa-calendar"></i>
+                            {{getDate(communityData.search_groups[0].created_date)}}
+                        </span>
+                        <span class="small-quotes">
+                            <i class="far fa-calendar"></i>
+                            {{communityData.search_groups[0].address}}
+                        </span>
+            </div>
+            <div class="community-data-row row">
+                
+                    <span class="small-quotes">
+                        Community Type: <span class="blues">
+                            {{communityData.search_groups[0].type}}
+                        </span>
+                    </span>
+                
+                    <span class="small-quotes">
+                        Community Interest: <span class="blues">{{communityData.search_groups[0].interest}}</span>
+                    </span>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="child-routes row">
+        <div class="col-12 col-md-4">
+            <button type="button" class="button-active">
+                <div class="row trans">
+                    <div class="col-10 trans items-left">
+                        PROFILE
+                    </div>
+                    <div class="col-2 trans">
+                        <i class="far fa-user"></i>
+                    </div>
+                </div>
+            </button>
+            <a routerLink='/home'>
+                <button type="button" class="button-bare">
+                    <div class="row trans">
+                        <div class="col-10 trans items-left">
+                            CHAT
+                        </div>
+                        <div class="col-2 trans">
+                            <i class="far fa-user"></i>
+                        </div>
+                    </div>
+                </button>
+            </a>
+            <button type="button" class="button-bare">
+                <div class="row trans">
+                    <div class="col-10 trans items-left">
+                        MARKET PLACE
+                    </div>
+                    <div class="col-2 trans">
+                        <i class="far fa-user"></i>
+                    </div>
+                </div>
+            </button>
+            <button type="button" class="button-bare">
+                <div class="row trans">
+                    <div class="col-10 trans items-left">
+                        MEMBERS
+                    </div>
+                    <div class="col-2 trans">
+                        <i class="far fa-user"></i>
+                    </div>
+                </div>
+            </button>
+            <button type="button" class="button-bare">
+                <div class="row trans">
+                    <div class="col-10 trans items-left">
+                        COMMUNITY SETTINGS
+                    </div>
+                    <div class="col-2 trans">
+                        <i class="far fa-user"></i>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div class="col-12 col-md-8">
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+
+            <div class="description">
+                <span class="bold-001">DESCRIPTION</span>
+                <p class="regular-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem.</p>
+
+                <span class="bold-001">COMMUNITY GUIDELINES</span>
+                <div class="guidelines">
+                    <div class="row guideline">
+                        <div class="circle-mark"></div>
+                        <span>This is a Sample Guideline which will be displayed</span>
+                    </div>
+                    <div class="row guideline">
+                        <div class="circle-mark"></div>
+                        <span>This is a Sample Guideline which will be displayed</span>
+                    </div>
+                    <div class="row guideline">
+                        <div class="circle-mark"></div>
+                        <span>This is a Sample Guideline which will be displayed</span>
+                    </div>
+                    <div class="row guideline">
+                        <div class="circle-mark"></div>
+                        <span>This is a Sample Guideline which will be displayed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

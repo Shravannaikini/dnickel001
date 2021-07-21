@@ -1,0 +1,342 @@
+
+.main-container{
+    width:100vw;
+    height:auto;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+.max-w-flex{
+    width:100%;
+    display:flex;
+}
+.center-a{
+    justify-content: center;
+}
+.text-c{
+    text-align:center;
+}
+.max-w{
+    width:100%;
+}
+
+/* profile desktop section css */
+.container-001{
+    width:100%;
+    height:auto;
+    font-size: 16px;
+}
+.profile-data{
+    display:inline-block;
+    justify-content:center;
+    width:100%;
+    height: 12rem;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.profile-name{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:2.375rem;
+    letter-spacing: 0.035rem;
+    font-weight:600;
+}
+.profile-name span{
+    font-size: 1.75em;
+    color:#ffffff;
+    letter-spacing:0.035em;
+}
+.profile-rating-grid{
+    margin-top:0.75rem;
+    width:16rem;
+}
+.border-right{
+    border-right:1px solid #ffffff;
+}
+.description-001{
+    display:flex;
+    justify-content: space-between;
+}
+.description-001 span{
+    font-size:0.875em;
+    color:#ffffff;
+    display:inline;
+}
+.description-001 small{
+    font-size:0.875em;
+    padding-top:2px;
+}
+.description-001 img{
+    display:inline-block;
+    height:16px;
+    width:16px;
+    padding-right:0.3125rem;
+}
+.andromeda-row{
+    display: inline;
+    padding-left: 0.3125rem;
+}
+.andromeda-row ngb-rating{
+    font-size: 0.875em;
+    color:gold;
+    background: transparent;
+    display: inline;
+}
+.profile-location-wrap span{
+    padding-top:0.625rem;
+    color:#ffffff;
+    font-size: 0.875rem;
+}
+.profile-location-wrap i{
+    padding-right:0.25rem;
+}
+.social-media{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+.social-media-wrap{
+    display:flex;
+    justify-content:start;
+    margin-top: 40px;
+    margin-right: 14vw;
+}
+.icon-wrap{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.facebook{
+    background-color:#3B5998;
+}
+.youtube{
+    background-color:#FF0000;
+}
+.instagram{
+    background-color: #DD2A7B;
+}
+.linkedin{
+    background-color: #0072B1;
+}
+.twitter{
+    background-color: #20A0F2;
+}
+
+.profile-photo{
+    position: absolute;
+    margin-top:-3rem;
+    width:fit-content;
+    border-radius:50%;
+    height:5.625rem;
+    width:5.625rem;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.profile-photo img{
+    height:15px;
+    width:15px;
+    left: 4.8125rem;
+    top: 1.25rem;
+    position:absolute;
+    background-color:white;
+    border-radius:50%;
+}
+.profile-options{
+    width:100%;
+    max-width:30%;
+    margin-top:4.125rem;
+}
+.icon-container{
+    display:flex;
+    justify-content:center;
+    height:2.7rem;
+    width:2.7rem;
+    align-items: center;
+    border-radius:50%;
+}
+.icon-container img{
+    height:6rem;
+}
+
+.option-description{
+    font-size:0.625rem;
+    color:#5E5F60;
+}
+.profile-text{
+    margin-top:0.9375rem;
+    width:60%;
+    text-align: center;
+}
+.profile-text span{
+    color:#212529;
+    font-size:12px;
+}
+
+/* profile desktop section css end */
+
+/* cards presentation */
+.cards-presentation{
+    margin-top:50px;
+    width:65%;
+    height:auto;
+    font-size:16px;
+    transition: 0.5s ease-in; 
+}
+.category span{
+    font-size:1.25em;
+    font-weight:bold;
+    color:#333333;
+}
+.horizontal-scroll-wrapper {
+    width: 210px;
+    height: 70vw;
+    top: -15px;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+.horizontal-scroll-wrapper > div {
+    width: 190px;
+    height: 21vw;
+    background-color: blue;
+    position: relative;
+    margin-top: 10px;
+    /* transform: rotate(90deg); */
+  }
+.horizontal-scroll-wrapper {
+    transform: rotate(-90deg);
+    transform-origin: right top;
+  }
+  .venv{
+      width:100%;
+      overflow-y:hidden;
+  }
+
+  #container {
+    width: 500px;
+    overflow: auto;
+  }
+  
+  #scrollable {
+    display:flex;
+    width: fit-content;
+    height: 100px;
+    background-color: red;
+  }
+  .card-container{
+      height:90px;
+      width: 20vw;
+      background-color:blue;
+      margin-right:10px;
+  }
+  .skill-card-enclosure{
+      height:250px;
+      width:240px;
+      display:inline-block;
+      margin-right:10px
+  }
+  .goods-card-enclosure{
+      height:230px;
+      width: 250px;
+      display:inline-table;
+      margin-right:10px;
+  }
+  .community-card-enclosure{
+      height:205px;
+      width:255px;
+      margin-right:10px;
+      display:inline-block;
+  }
+  .cards-presentation ::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
+}
+
+.cards-presentation ::-webkit-scrollbar-thumb {
+    background:transparent;
+}
+#scroll{
+    margin-top: 10px;
+    width:100%; 
+    max-height:300px; 
+    overflow-x:scroll; 
+    position: relative; 
+    left:0px; 
+    transition: 0.5s ease-in; 
+    white-space: nowrap;
+}
+.panel-controls{
+    display: flex; 
+    justify-content: flex-end;
+}
+
+/* cards presentation */
+
+
+/* test space */
+.test1{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.test2{
+    height:150px;
+    width:150px;
+    background-color:blue;
+}
+
+  
+
+/* test space */
+
+
+
+@media (min-width:551px) and (max-width:768px){
+    .profile-options{
+        width:100%;
+        max-width:40%;
+        margin-top:3.125rem;
+    }
+    .profile-text{
+        margin-top:0.9375rem;
+        width:80%;
+        text-align: center;
+    }
+    .cards-presentation{
+        margin-top:50px;
+        width:75%;
+        height:auto;
+        font-size:16px;
+    }
+}
+@media(max-width:550px){
+    .profile-options{
+        width:100%;
+        max-width:90%;
+        margin-top:3.125rem;
+    }
+    .profile-text{
+        margin-top:0.9375rem;
+        width:90%;
+        text-align: center;
+    }
+    .cards-presentation{
+        margin-top:50px;
+        width:95%;
+        height:auto;
+        font-size:16px;
+    }
+    .social-media-wrap{
+        display:flex;
+        justify-content:start;
+        margin-right: 14vw;
+        display:none;
+    }
+}
+

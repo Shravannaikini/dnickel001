@@ -1,0 +1,229 @@
+
+.regular-div-001{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.regular-div-002{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.width-restrict-001{
+    width: 100%;
+    max-width: 450px;
+}
+.width-restrict-002{
+    width: 100%;
+    max-width: 1000px;
+}
+.presentation-strong{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3d6788;
+}
+.presentation-para{
+    font-size: 0.8rem;
+    color: grey;
+}
+.border-001{
+    border-bottom:1px solid rgb(168, 168, 168) ;
+}
+.switch-case{
+    border: none !important;
+    display: inline-block;
+    background-color: rgb(112, 112, 112);
+    color: white;
+    padding: 7px 8px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.switch-case-active{
+    border: none !important;
+    display: inline-block;
+    background-color: rgb(92, 138, 92);
+    color: white;
+    padding: 7px 8px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.switch-case button:hover{
+    background-color: rgb(44, 94, 44);
+}
+.switch-case button:focus{
+    background-color: rgb(92, 138, 92);
+}
+
+.community-options{
+    width: 80vw;
+    margin-right: auto;
+    padding-top: 15px;
+    margin-left: auto;
+}
+.cards-presentation{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* card css */
+.cardbackground
+{
+    height: 190px;
+    border-radius: 20px;
+    width: 19vw;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    padding: 8px;
+}
+.card-top{
+    position:relative;
+    width:100%;
+    display: flex;
+    min-height: 60px;
+}
+.card-bottom
+{
+    position:absolute;
+    bottom:8px;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerfontcolor
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    color:white;
+    display: block;
+    text-align: start;
+}
+.time-stamp{
+    color: white;
+    font-size: 0.7em !important;
+    text-align: start;
+}
+.ml-left-small{
+    padding-left: 2px;
+}
+.img-fluid{
+    height:35px; 
+    width:35px; 
+    border-radius: 27px;
+}
+.card-name{
+    display: inline-block;
+    text-align: start;
+}
+.card-name-over{
+    width: 100%;
+    max-height: 35px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.metrics{
+    color: white;
+}
+.maximum-width{
+    width: 100%;
+}
+.recommend-bottom{
+    width: 100%;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.recommend-bottom-fle{
+    width: 100%;
+    display: flex;
+    padding-top: 15px;
+}
+.service-type{
+    display: block;
+    margin-top: 7px;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+}
+.member-count{
+    display: block;
+    color: white;
+    font-size: 0.8em;
+}
+.center-align{
+    justify-content: center;
+    display: flex;
+}
+.join-button{
+    display: block;
+    padding: 7px 24px;
+    border-radius: 20px;
+    background-color: #869658;
+    color: white;
+    font-size: 1em;
+    margin-top: 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+/* card css */
+
+@media (min-width:551px) and (max-width:768px){
+    .cardbackground{
+        height: 169px;
+        border-radius: 20px;
+        width: 22vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 8px;
+    }
+    .community-options{
+        width: 90vw;
+        margin-right: auto;
+        padding-top: 15px;
+        margin-left: auto;
+    }
+}
+
+@media(max-width:550px){
+    
+    .cards-presentation{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cardbackground{
+    height: 190px;
+    border-radius: 20px;
+    width: 90vw;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    padding: 8px;
+    }
+    .community-options{
+        width: 95vw;
+        margin-right: auto;
+        padding-top: 15px;
+        margin-left: auto;
+    }
+    
+    
+    
+}
+
+

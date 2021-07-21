@@ -1,0 +1,112 @@
+<div class="community-landing">
+    <div class="landing-wish" style="background-image: 
+    url(https://www.desktopbackground.org/download/2048x1152/2011/12/05/307720_hotels-hd-wallpapers_2560x1600_h.jpg);">
+    
+    <div class="landing-wish-quotes">
+        <div class="gaping">
+            <span class="quote-001">Search, Join Community</span>
+        </div>
+        <div class="gaping">
+            <span class="quote-002">That's All We Do</span>
+        </div>
+        <div class="gaping">
+            <p class="quote-003">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                numquam blanditiis
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <div class="community-options">
+        <div class="row community-controls">
+            <div class="col-12 col-md-6 left-division">
+                <button type="button" class={{buttonLeft}} (click)="swipeDataCommunity()" >MY COMMUNITY</button>
+                <button type="button" class={{buttonRight}} (click)="swipeDataRecommend()">RECOMMENDED</button>
+            </div>
+            <div class="col-12 col-md-6 right-division">
+                <button type="button" class="button-invite">+ BUILD YOUR COMMUNITY</button>
+            </div>
+        </div>
+        
+            
+                <div *ngIf="buttonLeft == 'button-highlight'; else recommendCards">
+                    <div class="cards-presentation width-restrict-002">
+                        <div *ngFor="let group of currentData.groups">
+               
+                            <a [routerLink]="['/communityinfo',group.name]">
+                               
+                                    <div class="mt-3">
+                                        <div class="card cardbackground" [style.background-image]="'linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url('+group.cover+')'">
+                                          <div class="card-top">
+                                              <img class="img-fluid" src={{group.avatar}} alt="notfound">
+                                              <div class="card-name" class="ml-2">
+                                                  <span class="headerfontcolor">{{group.group_name}}</span>
+                                                  <small class="time-stamp">created {{group.time_text}}</small>
+                                              </div>
+                                          </div>
+                                          <div class="card-bottom">
+                                              <div style="position:relative; width:50%; height: 50px;">
+                                                    <img *ngFor="let image of group.members.slice(0,3); let i = index" class="img-fluid" style="height:30px;width:30px;border-radius: 27px;position:absolute;
+                                                    bottom: 10px;" [style.left]="(i*15)+'px'" src="{{image.avatar}}" alt="notfd">
+                                              </div>
+                                              <div>
+                                                  <span class="fa fa-list-alt metrics">
+                                                      <span class="ml-left-small">{{group.post_count}}</span>
+                                                    </span>
+                                                  <span class="ml-2 fa fa-comment-o metrics">
+                                                      <span class="ml-left-small">{{group.chat_count}}</span>
+                                                  </span>
+                                              </div>
+                                          </div>
+                                        </div>
+                                   </div>
+                                
+                            </a>
+                    </div>
+                    </div>
+
+                </div> <!-- *ngIf ends here -->
+
+                <!-- else block -->
+                <ng-template #recommendCards>
+                    <div class="cards-presentation width-restrict-002">
+                        <div *ngFor="let group of currentData.recommended_groups">
+               
+                            <a [routerLink]="['/communityinfo',group.name]">
+                                
+                                    <div class="mt-3">
+                                        <div class="card cardbackground" [style.background-image]="'linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url('+group.cover+')'">
+                                          <div class="card-top">
+                                              <img class="img-fluid" src={{group.avatar}} alt="notfound">
+                                              <div class="card-name" class="ml-2">
+                                                  <div class="card-name-over">
+                                                    <span class="headerfontcolor">{{group.group_name}}</span>
+                                                  </div>
+                                                  <small class="time-stamp">created {{group.time_text}}</small>
+                                              </div>
+                                          </div>
+                                          <div class="recommend-bottom-flex">
+                                            <div class="recommend-bottom">
+                                                <span class="service-type">{{group.typeName}}</span>
+                                                <span class="member-count">{{group.member_count}} members</span>
+                                                <div class="maximum-width center-align">
+                                                  <button type="button" class="join-button">JOIN</button>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                   </div>
+                                
+                            </a>
+                       </div>
+                    </div>
+                </ng-template>
+             <!-- cards presentation ends here -->
+        <div class="row justify-content-center" style="margin-top: 20px;">
+            <button type="button" class="button-invite">VIEW ALL COMMUNITIES</button>
+        </div>
+
+</div>
+</div>

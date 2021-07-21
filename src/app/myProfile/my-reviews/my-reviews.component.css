@@ -1,0 +1,248 @@
+.custom-class{
+    justify-content: space-around;
+}
+ngb-rating{
+    font-size: 20px;
+    color:gold;
+    background: transparent;
+    display: inline-block;
+  }
+.andromeda-row ngb-rating{
+    font-size: 30px;
+    color:gold;
+    background: transparent;
+    display: inline-block;
+  } 
+/* overall rating css */
+.overall-rating{
+    width: 250px;
+    min-height: 155px;
+    background-color: transparent;
+}
+.regular-row{
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+}
+.row-element{
+    display: inline-block;
+}
+.rating-span{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+/*overall rating stars css */
+.overall-rating .star {
+    font-size: 16px;
+    width: 14px;
+    display: inline-block;
+    color: gray;
+}
+.overall-rating .star:last-child {
+    margin-right: 0;
+}
+.overall-rating .star:before {
+    content:'\2605';
+}
+.overall-rating .star.on {
+    color: gold;
+}
+.overall-rating .star.half:after {
+    content:'\2605';
+    color: gold;
+    position: absolute;
+    margin-left: -13px;
+    width: 7px;
+    overflow: hidden;
+}
+.overall-rating .andromeda{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+/*overall rating stars css end*/
+.reviews{
+    font-size: 12px;
+    color: rgb(38, 38, 121);
+    font-weight: 600;
+    padding-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.rating-shares{
+    width: 100%;
+}
+.rating-share{
+    display: flex;
+}
+.first-num{
+    display: inline-block;
+}
+.number-001{
+    font-size: 12px;
+    color: rgb(38, 38, 121);
+    display: inline-block;
+    padding-right: 4px;
+}
+.progress-adjustment{
+    padding-top:5px;
+    padding-right: 5px;
+}
+.progress {
+    width:200px;
+    height:10px;
+    background-color: #9a9a97;
+    position:relative;
+    border-radius:5px;
+}
+.progress:after {
+    content:'\A';
+    position:absolute;
+    background:gold;
+    top:0; bottom:0;
+    left:0; 
+    width:50%;
+    border-radius: 5px;
+}
+
+/* overall rating css end */
+
+
+/* ratings card css */
+.rating-card{
+    height: 150px;
+    width: 280px;
+    border: 1px solid rgb(209, 205, 205);
+    border-radius: 7px;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.title{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid rgb(209, 205, 205);
+}
+.title-row{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: max-content;
+}
+.title-image{
+    width: 30px;
+    height: 30px;
+    background-image: url("https://itchronicles.com/wp-content/uploads/2020/11/where-is-ai-used-1024x683.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    display: inline-block;
+}
+.title-mention{
+    display: flex;
+    align-items: center;
+}
+.title-mention span{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    margin-left: 7px;
+    color: rgb(21, 21, 78);
+    display: inline-block;
+}
+.andromeda{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.andromeda-row{
+    padding-top: 10px;
+    padding-bottom: 3px;
+    width: max-content;
+}
+
+/* stars css */
+.star {
+    font-size: 30px;
+    width: 25px;
+    display: inline-block;
+    color: gray;
+}
+.star:last-child {
+    margin-right: 0;
+}
+.star:before {
+    content:'\2605';
+}
+.star.on {
+    color: gold;
+}
+.star.half:after {
+    content:'\2605';
+    color: gold;
+    position: absolute;
+    margin-left: -25px;
+    width: 12px;
+    overflow: hidden;
+}
+/* stars css end*/
+
+.review-count{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.review-count span{
+    font-size: 11px;
+    color: rgb(21, 21, 78);
+    font-weight: 600;
+}
+
+.review-info{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.review-info-row{
+    display: flex;
+    padding-bottom: 5px;
+    width: max-content;
+}
+
+.review-by{
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.review-by span{
+    font-size: 11px;
+    color: rgb(21, 21, 78);
+    font-weight: 600;
+}
+.separator{
+    display: flex;
+    align-items: center;
+}
+.separator i{
+    color: rgb(21, 21, 78);
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 4px;
+}
+.user-image{
+    margin-top: 3px;
+    height: 15px;
+    width: 15px;
+    background-image: url("https://static.tvmaze.com/uploads/images/medium_untouched/62/156066.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    display: inline-block;
+}
+/* ratings card css end*/

@@ -1,0 +1,33 @@
+.venv{
+    margin-top: 200px;
+    align-items: middle;
+    /* justify-content: center; */
+    background-color: white;
+    height: 500px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(41, 39, 39);
+}
+
+/* button code */
+
+.button-sell{
+    color: white;
+    background-color: #869658;
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 18px;
+    margin: 3px;
+}
+.button-sell-div span{
+    padding-left: 5px;
+}
+.button-sell-div{
+    border: 2px solid white;
+    border-style: dashed;
+    border-radius: 23px;
+    height: fit-content;
+    width: fit-content;
+}
+/* button code */

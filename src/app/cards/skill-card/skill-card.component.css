@@ -1,0 +1,146 @@
+.skill-card{
+    background-color:#DCEEFD;
+    max-height:250px;
+    max-width:240px;
+    height:100%;
+    width:100%;
+    border-radius:18px;
+    overflow-y:hidden;
+    display:inline-block;
+}
+.card-content-001{
+    width:100%;
+    height:auto;
+    padding-top: 12px;
+}
+.max-w{
+    width:100%
+}
+.right-a{
+    align-items:center;
+    text-align:right;
+    justify-content:flex-end
+}
+.left-a{
+    align-items:center;
+    text-align:left;
+    justify-content:flex-start;
+}
+
+.center-a{
+    justify-content:center;
+    text-align:center;
+    align-items:center
+}
+.skill-name{
+    color:#000000;
+    font-size:16px;
+    font-weight: 500;
+}
+.icon-div{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.icon-div i{
+    color:#000000;
+    font-size:12px;
+}
+.dollar-div{
+    width:80%;
+    display:flex;
+    height: 46px;
+    background-color: #356083;
+    border-radius: 9px;
+    padding: 4px 0px;
+    justify-content: center;
+}
+.max-w-50{
+    width:50%;
+}
+.number-16{
+    padding-top:7px;
+    font-size:16px;
+    color:#FFFFFF;
+}
+.miniate-span{
+    color:#FFFFFF;
+    font-size: 7px;
+    letter-spacing: 0.02rem;
+}
+.first-dollar-wrap{
+    display:flex;
+    flex-direction: column;
+}
+.left-number{
+    width:45%;
+}
+.middle-hipen{
+    width:10%;
+}
+.right-number{
+    width:45%;
+}
+.second-dollar span{
+    font-size:14px;
+    color:#FFFFFF;
+}
+.column-flex{
+    padding-top:5px;
+    flex-direction:column;
+}
+.border-right{
+    border-right:1px solid #FFFFFF;
+}
+.skill-miniate-span{
+    font-size: 8px;
+    color: #000000;
+    font-weight: bold;
+}
+.icon-wrap-001{
+   width:75%; 
+}
+.icon-wrap-002{
+    width:33%;
+}
+.icon-wrap-002 img{
+    height:0.9rem;
+    color:#000000;
+}
+.icon-wrap-002 span{
+    font-size:8px;
+    color:#000000;
+}
+.category-specific{
+    display:flex;
+    height:14px;
+    width:auto;
+    text-align:center;
+    align-items:center;
+    border-radius:8px;
+    background-color: #356083;
+    margin-right:5px;
+}
+.category-specific span{
+    display:inline;
+    font-size:7px;
+    color:#F2F2F2;
+    padding:2px 5px;
+}
+.or-radio{
+    height:15px;
+    width:15px;
+    display:flex;
+    text-align:center;
+    align-items:center;
+    background-color:#7290A9;
+    position:absolute;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1px;
+    margin-top: 9px;
+}
+.or-radio span{
+    font-size:6px;
+    color:#FFFFFF;
+}

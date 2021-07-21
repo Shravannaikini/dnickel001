@@ -1,0 +1,128 @@
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+    transform: none !important;
+}
+.container-div{
+    width: 100%;
+    font-size: 16px;
+}
+
+.maximum-width{
+    width: 100%;
+}
+.community-data-div{
+    height: 210px;
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f8;
+}
+.community-data{
+    width: 100%;
+    max-width: 336px;
+    margin-left: 100px;
+}
+.community-data-row{
+    margin-bottom: 10px;
+}
+.quote-001{
+    font-size: 1.0em;
+    color: rgb(124, 123, 123);
+    font-weight: 600;
+}
+.quote-002{
+    font-size: 1.8em;
+    color: #356083;
+    font-weight: bold;
+    line-height: 15px;
+    letter-spacing: 0.2mm;
+}
+.small-quotes{
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 17px;
+    margin-top: 7px;
+}
+.blues{
+    color: #356083;
+}
+.child-routes{
+    max-width: 840px;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 50px;
+}
+.trans{
+    background-color: transparent;
+}
+.button-active{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #869658;
+    width: 100%;
+    padding: 12px 10px;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+.button-bare{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f6f6f8;
+    width: 100%;
+    padding: 12px 10px;
+    color:rgb(124, 123, 123);
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+.items-left{
+    display: flex;
+    justify-content: flex-start;
+}
+.description{
+    text-align: start;
+    margin-top: 15px;    
+}
+.bold-001{
+    font-weight: 500;
+    color: #356083;
+    font-size: 1em;
+    margin-top: 15px;
+}
+.regular-para{
+    color: #333333;
+    font-size: 1em;
+    margin-top: 15px;
+}
+.circle-mark{
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(94, 173, 94);
+}
+.guidelines{
+    margin-top:15px;
+}
+.guideline span{
+    margin-left: 8px;
+    font-size: 1em;
+    color: #333333;
+}
+.guideline{
+    margin-top: 10px;
+}
+
+
+
+
+
+@media (max-width:550px){
+    .community-data{
+        width: 100%;
+        max-width: 336px;
+        margin-left: 15px;
+    }
+}
