@@ -33,6 +33,10 @@
     background-position: center;
     background-repeat:no-repeat;
 }
+.profile-banner
+{
+  background-image: url('https://i.pinimg.com/originals/51/7e/83/517e83eb97c94ffc7bec62db71c3c586.jpg');
+}
 .profile-name{
     width:100%;
     display:flex;
@@ -137,6 +141,7 @@
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
+    background-image: url('https://i.ibb.co/4ZW6qdS/shra1.jpg');
 }
 .profile-photo img{
     height:15px;
@@ -514,6 +519,37 @@
     text-align: center;
     outline: none;
     border: none;
+}
+.members-avatars
+{
+    position:relative;
+     width:50%;
+      height: 50px;
+}
+.members-avatars-overlap
+{
+    height:30px;
+    width:30px;
+    border-radius: 27px;
+    position:absolute;
+    bottom: 10px; 
+    border: 2px solid white;
+}
+.members-avatar-count
+{
+    width: 30px;
+     height: 30px; 
+     border-radius: 15px;
+     background-color: rgba(0, 0, 0, 0.171);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     border: 1px solid white;   
+}
+.card-bottom-icons
+{
+    color: white;
 }
 /* card css */
  

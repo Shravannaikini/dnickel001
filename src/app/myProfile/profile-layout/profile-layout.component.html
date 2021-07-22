@@ -1,7 +1,7 @@
 <div class="main-contaner">
 
     <div class="container-001">
-        <div class="profile-data" style="background-image: url('https://i.pinimg.com/originals/51/7e/83/517e83eb97c94ffc7bec62db71c3c586.jpg');">
+        <div class="profile-data profile-banner">
             <div class="profile-name">
                 <span>Shravan Naikini</span>
             </div>
@@ -53,7 +53,7 @@
             
         </div>
         <div class="max-w-flex center-a">
-            <div class="profile-photo" style="background-image: url('https://i.ibb.co/4ZW6qdS/shra1.jpg');">
+            <div class="profile-photo">
                 <img src="assets/profile-home/check.svg">
             </div>
         </div>
@@ -238,20 +238,19 @@
                                   </div>
                               </div>
                               <div class="card-bottom">
-                                  <div style="position:relative; width:50%; height: 50px;">
-                                        <img *ngFor="let image of community.members.slice(0,3); let i = index" class="img-fluid" style="height:30px;width:30px;border-radius: 27px;position:absolute;
-                                        bottom: 10px; border: 2px solid white;" [style.left]="(i*15)+'px'" src="{{image.avatar}}" alt="notfd">
-                                       <div *ngIf="community.members.length>4" style="width: 30px; height: 30px; border-radius: 15px; background-color: rgba(0, 0, 0, 0.171); display: flex; align-items: center; justify-content: center; color: white; border: 1px solid white;">
+                                  <div class="members-avatars">
+                                        <img *ngFor="let image of community.members.slice(0,3); let i = index" class="img-fluid members-avatars-overlap"[style.left]="(i*15)+'px'" src="{{image.avatar}}" alt="notfd">
+                                       <div *ngIf="community.members.length>4" class="members-avatar-count">
                                             + {{community.members.length-3}}
                                        </div>
                                         <!-- <img class="img-fluid"  style="height:30px;width:30px;border-radius: 27px;position:absolute;
                                         bottom: 10px;" src="" alt="images from api" > -->
                                   </div>
-                                  <div style="color: white;">
+                                  <div class="card-bottom-icons">
                                     
-                                    <img src="../../../assets/Union 4.svg">
+                                    <img src="../../../assets/profile-home/Union 4.svg">
                                        <span class="ml-left-small">1</span>
-                                     <img src="../../../assets/Icon material-chat_bubble_outline.svg">
+                                     <img src="../../../assets/profile-home/Icon material-chat_bubble_outline.svg">
                                        <span class="ml-left-small">2</span>
                                   </div>
                               </div>
@@ -272,6 +271,6 @@
         </div>
     </div>
     
-    <div style="height:300px;display:block"></div>
+    <!-- <div style="height:300px;display:block"></div> -->
 
 </div>
