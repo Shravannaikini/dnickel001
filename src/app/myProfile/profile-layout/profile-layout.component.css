@@ -245,7 +245,7 @@
   .goods-card-enclosure{
       height:230px;
       width: 250px;
-      display:inline-table;
+      
       margin-right:10px;
   }
   .community-card-enclosure{
@@ -268,7 +268,9 @@
     max-height:300px; 
     overflow-x:scroll; 
     position: relative; 
-    left:0px; 
+    left: 0px;
+    display: flex;
+    align-items: center;
     transition: 0.5s ease-in; 
     white-space: nowrap;
 }
@@ -294,6 +296,240 @@
   
 
 /* test space */
+
+
+/* product card */
+.card-product{
+    height:11.875rem;
+    width:15.625rem;
+    border-radius:0.5rem;
+}
+.image-container{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:6.875rem;
+}
+.max-w{
+    width:100%;
+}
+.d-flex{
+    display:flex;
+}
+.major-col{
+    max-width: 69%;
+    white-space: nowrap;
+    margin-right: 6%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.minor-col{
+    white-space: normal;
+    max-width:30%;
+   
+} 
+.col-height-1{
+    /* max-height:3.125rem; */
+    justify-content: space-between;
+}
+.product-name{
+    
+    line-height:1.875rem;
+    color:#356083;
+    font-size:1rem;
+    font-weight:bold;
+}
+.product-price{
+    
+    color:black;
+    font-size:1rem;
+    line-height:1.875rem;
+    font-weight: bold;
+}
+.text-end{
+    text-align:right;
+    justify-content:flex-end;
+}
+.product-address{
+    font-size:0.75rem;
+    color:#666666;
+    
+}
+.product-time{
+    font-size:0.625rem;
+    color:#666666;
+    
+}
+.icons-container{
+    margin-top:10px;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+}
+.icon-div{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius:50%;
+}
+.icon-div-menu{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:20px;
+    width:20px;
+    background:transparent;
+}
+.icon-div-menu i{
+    font-size: 13px;
+    color:white;
+}
+.icon-div span{
+    color:#356083;
+    font-size:8px;
+}
+.icon-div img{
+    height:8px;
+    margin-right:1px;
+}
+/* /* .icon-div-bare{
+    height: 20px;
+    width: 20px;
+} */
+.icon-div-bare img{
+    height:20px;
+    margin-right:2px;
+} 
+
+
+/* community card */
+
+.cardbackground
+{
+    height: 100%;
+    max-height:205px;
+    max-width:250px;
+    border-radius: 20px;
+    width: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    padding: 8px;
+}
+
+.card-top{
+    position:relative;
+    width:100%;
+    display: flex;
+    min-height: 60px;
+}
+.card-bottom
+{
+    position:absolute;
+    bottom:8px;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerfontcolor
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    color:white;
+    display: block;
+    text-align: start;
+}
+.time-stamp{
+    color: white;
+    font-size: 0.7em !important;
+    text-align: start;
+}
+.ml-left-small{
+    padding-left: 2px;
+}
+.img-fluid{
+    height:35px; 
+    width:35px; 
+    border-radius: 27px;
+}
+.card-name{
+    display: inline-block;
+    text-align: start;
+}
+.card-name-over{
+    width: 100%;
+    max-height: 35px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.metrics{
+    color: white;
+}
+.maximum-width{
+    width: 100%;
+}
+.recommend-bottom{
+    width: 100%;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.recommend-bottom-fle{
+    width: 100%;
+    display: flex;
+    padding-top: 15px;
+}
+.service-type{
+    display: block;
+    margin-top: 7px;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+}
+.member-count{
+    display: block;
+    color: white;
+    font-size: 0.8em;
+}
+.center-align{
+    justify-content: center;
+    display: flex;
+}
+.join-button{
+    display: block;
+    padding: 7px 24px;
+    border-radius: 20px;
+    background-color: #869658;
+    color: white;
+    font-size: 1em;
+    margin-top: 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+/* card css */
+ 
+ 
+ 
+ 
+@media (min-width:551px) and (max-width:768px){
+    .community-landing{
+        font-size: 14px;
+    }
+    .cardbackground{
+        height: 160px;
+        }
+}
+
+
 
 
 

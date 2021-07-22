@@ -120,14 +120,15 @@
     <div class="max-w-flex center-a">
         <div class="cards-presentation">
             <div class="max-w">
-                <div class="max-w category">
-                    <span>Skills</span>
-                </div>
+                
                 <div class="venv">
 
                     <div>
-                        <div class="panel-controls">
-                        <div>
+                        <div class="panel-controls d-flex justify-content-between align-items-center">
+                            <div class="category">
+                                <span>Skills</span>
+                            </div>
+                        <div class="d-flex justify-content-between align-items-center">
                             <button (click)="leftmove(panel1)" class="btn btn-primary">&lt;</button>
                             <button (click)="rightmove(panel1)" class="btn btn-primary ml-2">&gt;</button>
                         </div>
@@ -147,28 +148,63 @@
                         </div>
                     </div>  
                 </div>
-                <div class="max-w category">
-                    <span>Goods</span>
-                </div>
+               
                 <div class="venv">
 
                     <div>
-                        <div class="panel-controls">
-                        <div>
+                        <div class="panel-controls d-flex justify-content-between align-items-center">
+                            <div class=" category">
+                                <span>Goods</span>
+                            </div>
+                        <div class="d-flex justify-content-between align-items-center" >
                             <button (click)="leftmove(panel2)" class="btn btn-primary">&lt;</button>
                             <button (click)="rightmove(panel2)" class="btn btn-primary ml-2">&gt;</button>
                         </div>
                         </div>
-                        <div #panel2 id="scroll">
-                        <div >
-                         <div class="goods-card-enclosure"><app-product-card></app-product-card></div>
-                         <div class="goods-card-enclosure"><app-product-card></app-product-card></div>
-                         <div class="goods-card-enclosure"><app-product-card></app-product-card></div>
-                         <div class="goods-card-enclosure"><app-product-card></app-product-card></div>
-                         <div class="goods-card-enclosure"><app-product-card></app-product-card></div>
-                         <div class="goods-card-enclosure"><app-product-card></app-product-card></div>
-                         <div class="goods-card-enclosure"><app-product-card></app-product-card></div>
-                         <div class="goods-card-enclosure"><app-product-card></app-product-card></div>
+                        <div #panel2  id="scroll">
+                        <div *ngFor="let product of products" >
+                         <div class="goods-card-enclosure" ><div class="card-product shadow">
+                            <div class="image-container" [style.background-image]="'url('+product.uri+')'">
+                                <div class="max-w d-flex text-end">
+                                    <div class="icons-container">
+                                        <div class="icon-div-menu">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </div>
+                                        <div class="icon-div">
+                                            <img src="assets/profile-home/like.svg">
+                                            <span>
+                                                {{product.likes_count}}
+                                            </span>
+                                        </div>
+                                        <div class="icon-div-bare">
+                                            <img class="temporary" src="assets/profile-home/privacy.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <div class="max-w d-flex col-height-1">
+                                    <div class="major-col">
+                                        <span class="product-name">{{product.name}}</span>
+                                    </div>
+                                    <div class="minor-col text-end">
+                                        <span class="product-price">${{product.price}}</span>
+                                    </div>
+                                </div>
+                                <div class="max-w d-flex col-height-1">
+                                    <div class="major-col">
+                                        <span class="product-address">
+                                           {{product.location}}
+                                        </span>
+                                    </div>
+                                    <div class="minor-col text-end">
+                                        <span class="product-time">{{product.time_text}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div></div>
+                        
                            
                         </div>
                         </div>
@@ -176,30 +212,52 @@
 
                     
                 </div>
-                <div class="max-w category">
-                    <span>Communities</span>
-                </div>
+                
                 <div class="venv">
 
                     <div>
-                        <div class="panel-controls">
-                        <div>
+                        <div class="panel-controls d-flex justify-content-between align-items-center">
+                            <div class="category">
+                                <span>Communities</span>
+                            </div>
+                        <div class="d-flex justify-content-between align-items-center">
                             <button (click)="leftmove(panel3)" class="btn btn-primary">&lt;</button>
                             <button (click)="rightmove(panel3)" class="btn btn-primary ml-2">&gt;</button>
                         </div>
                         </div>
                         <div #panel3 id="scroll">
-                        <div >
-                            <div class="community-card-enclosure"><app-community-card></app-community-card></div>
-                            <div class="community-card-enclosure"><app-community-card></app-community-card></div>
-                            <div class="community-card-enclosure"><app-community-card></app-community-card></div>
-                            <div class="community-card-enclosure"><app-community-card></app-community-card></div>
-                            <div class="community-card-enclosure"><app-community-card></app-community-card></div>
-                            <div class="community-card-enclosure"><app-community-card></app-community-card></div>
-                            <div class="community-card-enclosure"><app-community-card></app-community-card></div>
-                            <div class="community-card-enclosure"><app-community-card></app-community-card></div>
-                            <div class="community-card-enclosure"><app-community-card></app-community-card></div>
-                            <div class="community-card-enclosure"><app-community-card></app-community-card></div>
+                        <div  *ngFor="let community of communities">
+                            <div class="community-card-enclosure"><div class="card cardbackground" [style.background-image]="'linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),url('+community.cover+')'" >
+                                <!-- [style.background-image]="'linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url('+group.cover+')'" -->
+                            
+                              <div class="card-top">
+                                  <img class="img-fluid" [src]="community.avatar" alt="notfound">
+                                  <div class="card-name" class="ml-2">
+                                      <span class="headerfontcolor">{{community.group_name}}</span>
+                                      <small class="time-stamp">created {{community.time_text}}</small>
+                                  </div>
+                              </div>
+                              <div class="card-bottom">
+                                  <div style="position:relative; width:50%; height: 50px;">
+                                        <img *ngFor="let image of community.members.slice(0,3); let i = index" class="img-fluid" style="height:30px;width:30px;border-radius: 27px;position:absolute;
+                                        bottom: 10px; border: 2px solid white;" [style.left]="(i*15)+'px'" src="{{image.avatar}}" alt="notfd">
+                                       <div *ngIf="community.members.length>4" style="width: 30px; height: 30px; border-radius: 15px; background-color: rgba(0, 0, 0, 0.171); display: flex; align-items: center; justify-content: center; color: white; border: 1px solid white;">
+                                            + {{community.members.length-3}}
+                                       </div>
+                                        <!-- <img class="img-fluid"  style="height:30px;width:30px;border-radius: 27px;position:absolute;
+                                        bottom: 10px;" src="" alt="images from api" > -->
+                                  </div>
+                                  <div style="color: white;">
+                                    
+                                    <img src="../../../assets/Union 4.svg">
+                                       <span class="ml-left-small">1</span>
+                                     <img src="../../../assets/Icon material-chat_bubble_outline.svg">
+                                       <span class="ml-left-small">2</span>
+                                  </div>
+                              </div>
+                            </div>
+                            </div>
+                           
                         </div>
                         </div>
                     </div> 
