@@ -1,7 +1,5 @@
 .community-landing{
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 16px;
 }
 .landing-wish{
@@ -11,6 +9,9 @@
     width: 100%;
     display: flex;
     align-items: center;
+}
+.max-w{
+    width:100%;
 }
 .landing-wish-quotes{
     max-width: 500px;
@@ -40,7 +41,7 @@
     align-items: center;
 }
 .community-options{
-    width: 90vw;
+    width: 80%;
     margin-right: auto;
     padding-top: 15px;
     margin-left: auto;
@@ -87,11 +88,18 @@
 
 
 /* card css */
+.card-enclosure{
+    width:23%;
+    height:11.875rem;
+    margin-top:15px;
+}
 .cardbackground
 {
-    height: 190px;
-    border-radius: 20px;
-    width: 21vw;
+    max-height: 12.5625rem;
+    border-radius: 1.25rem;
+    max-width: 18.125rem;
+    height:100%;
+    width:100%;
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center; 
