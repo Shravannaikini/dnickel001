@@ -1,48 +1,69 @@
 <div class="container-div">
-    <div class="maximum-width community-data-div">
-        <div class="community-data">
-            <div class="community-data-row">
-                <span class="quote-001">{{communityData.search_groups[0].about}}</span>
-            </div>
-            <div class="community-data-row">
-                <span class="quote-002">{{communityData.search_groups[0].group_name}}</span>
-            </div>
-            <div class="community-data-row row">
+    <div class="maximum-width row community-data-div">
+        <div class="col-12 col-md-6">
+            <div class="community-data">
+                <div class="community-data-row">
+                    <span class="quote-001">{{communityData.search_groups[0].about}}</span>
+                </div>
+                <div class="community-data-row">
+                    <span class="quote-002">{{communityData.search_groups[0].group_name}}</span>
+                </div>
+                <div class="community-data-row row">
+                        
+                            <div class="small-quotes-enclosure">
+                                <img src="assets/community-info/calender.png">
+                                <span class="small-quotes">
+                                    {{getDate(communityData.search_groups[0].created_date)}}
+                                </span>
+                            </div>
+                            <div class="small-quotes-enclosure">
+                                <img src="assets/community-info/location.png">
+                                <span class="small-quotes">
+                                    {{communityData.search_groups[0].address}}
+                                </span>
+                            </div>
+                </div>
+                <div class="community-data-row row">
                     
-                        <span class="small-quotes">
-                            <i class="far fa-calendar"></i>
-                            {{getDate(communityData.search_groups[0].created_date)}}
-                        </span>
-                        <span class="small-quotes">
-                            <i class="far fa-calendar"></i>
-                            {{communityData.search_groups[0].address}}
-                        </span>
-            </div>
-            <div class="community-data-row row">
-                
-                    <span class="small-quotes">
-                        Community Type: <span class="blues">
-                            {{communityData.search_groups[0].type}}
-                        </span>
-                    </span>
-                
-                    <span class="small-quotes">
-                        Community Interest: <span class="blues">{{communityData.search_groups[0].interest}}</span>
-                    </span>
-                
+                        <div class="small-quotes-enclosure">
+                            <span class="small-quotes">
+                                Community Type: <span class="blues">
+                                    {{communityData.search_groups[0].type}}
+                                </span>
+                            </span>
+                        </div>
+                    
+                        <div class="small-quotes-enclosure">
+                            <span class="small-quotes">
+                                Community Interest: <span class="blues">{{communityData.search_groups[0].interest}}</span>
+                            </span>
+                        </div>
+                    
+                </div>
             </div>
         </div>
+        <div class="col-0 col-md-6 share-options-container">
+            <div class="share-options">
+                <div class="share-option">
+                    <img src="assets/community-info/share001.png">
+                </div>
+                <div class="share-option">
+                    <img src="assets/community-info/home.png">
+                </div>
+            </div>
+        </div>
+        
     </div>
 
     <div class="child-routes row">
         <div class="col-12 col-md-4">
             <button type="button" class="button-active">
                 <div class="row trans">
-                    <div class="col-10 trans items-left">
+                    <div class="col-9 no-gutters trans items-left">
                         PROFILE
                     </div>
-                    <div class="col-2 trans">
-                        <i class="far fa-user"></i>
+                    <div class="col-3 no-gutters trans">
+                        <img src="assets/community-info/call.png">
                     </div>
                 </div>
             </button>

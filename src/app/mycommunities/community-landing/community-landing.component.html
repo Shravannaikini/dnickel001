@@ -70,9 +70,9 @@
                     </div> <!-- *ngIf ends here -->
     
                     <!-- else block -->
-                    <ng-template #recommendCards>
+                    <ng-template class="max-w" #recommendCards>
                         <div class="cards-presentation width-restrict-002">
-                            <div *ngFor="let group of currentData.recommended_groups">
+                            <div class="card-enclosure" *ngFor="let group of currentData.recommended_groups">
                    
                                 <a [routerLink]="['/communityinfo',group.name]">
                                     
